@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Masonry Brick CSS - Areeb</title>
+<link rel="icon" href="https://www.dropbox.com/s/4gmziynp2aaep11/me.jpg?raw=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .yellow-container {
+        background-color: rgb(255,250,205);
+        border: 1px solid rgb(255,250,205);
+        padding: 2px 15px;
+    }
+
+    .reference-container {
+        background-color: rgb(237, 237, 237);
+        border: 1px solid rgb(237, 237, 237);
+        padding: 2px 15px;
+    }
+
+    .script-text {
+        background-color: #80808059;
+    }
+
+    .link-text {
+        text-decoration: none;
+    }
+
+    .fa {
+        padding-right: 40px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .w3-circle {
+        height: 100px;
+    }
+
+    .w3-code {
+        overflow: auto
+    }
+
+
+    .outer {
+        width: 100%;
+        padding: 0;
+        display: table;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .middle {
+        padding: 0;
+        vertical-align: middle;
+        display: table-cell;
+        margin: 0;
+    }
+
+    .inner {
+        width: 600px;
+        background-color: #fff;
+        margin: 0 auto;
+        text-align: left;
+        padding: 10px;
+        /*whatever width you want*/
+    }
+
+    .author-section {
+        display: inline-flex;
+    }
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <div class="w3-right w3-hide-small">
+                <a href="https://areebyounus.blogspot.com/" target="_blank" class="w3-bar-item w3-button">About me</a>
+            </div>
+            <a href="#home" class="w3-bar-item w3-button">Creating CSS Grid Layout Masonry</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="https://www.dropbox.com/s/lzxd41yih0m0n45/Cover.jpeg?raw=1" alt="Cover Image" width="1600" height="800">
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-container w3-padding-64" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-padding-64">
+                <img src="https://www.dropbox.com/s/a8vxbngyxbafz6v/question-mark.jpg?raw=1" class="w3-round w3-image w3-opacity-min" alt="What?" width="600" height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large w3-padding-64">
+                <h1 class="w3-center">What is a masonry brick</h1><br>
+                <p class="w3-large">Masonry is a <span class="w3-tag w3-light-grey">JavaScript grid layout library</span>. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-row w3-padding-large">
+                <p class="w3-large">In today’s internet, a better site is considered to be the one that makes amount of data presented inversely proportional to the space and time that is consumed. People today are so habitual of looking at web pages that doesn’t look so old school and they have down to look at a complete data say it be an image or a paragraph or anything. The best way to render data is to show the maximum of it within the first glance maintaining the quality and clarity. You feel your users are tired of scrolling down to your bunch of images, make a grid layout and you are good to go.</p>
+                <p class="w3-large">But does making a grid layout solves your problem? What if you have images of multiple sizes and dimensions, then a grid layout will look something like this.</p>
+
+                <img src="https://www.dropbox.com/s/y37xx41titu747z/without_masonry.png?raw=1" class="w3-round w3-image center" alt="Normal Grid" width="600" height="750">
+
+                <p class="w3-large">Not so impressive, right?</p>
+                <p class="w3-large">How about aligning it using masonry, so that it looks cleaner, aligned and impressive like this one.</p>
+
+                <img src="https://www.dropbox.com/s/47opwykt7d7lviw/with_masonry.png?raw=1" class="w3-round w3-image center" alt="Masonry brick" width="600" height="750">
+
+                <p class="w3-large">The images have been added in same order in HTML in both cases, masonry automatically detects which images would align the images in a proper fashion, and lets your site render a nice clean and aligned grid of images in all devices with different aspect ratios.</p>
+            </div>
+
+            <hr>
+            <div class="w3-row w3-padding-large">
+                <div class="w3-container w3-padding-64" id="contact">
+                    <h1>How to implement?</h1><br>
+                    <div class="yellow-container w3-container w3-padding-64">
+                        <p class="w3-large"><strong>It is preferred that jquery should be downloaded or at least referenced into your project as jquery is much faster. You can install jquery through node package manager by command:</strong></p>
+                        <div class="w3-code notranslate w3-black w3-large w3-container w3-padding-64">
+                            npm install jquery
+                        </div>
+                        <p class="w3-large"><strong>Or you can include link to jqeury source version online using</strong></p>
+                        <p class="w3-code w3-light-grey script-text"><strong><span>&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"&gt;&lt;/script&gt;</span></strong></p>
+                        <p class="w3-large"><strong>There are a whole lot of links with which you can use functions of jquery.</strong></p>
+                    </div><br>
+                    <h4>HTML:</h4>
+                    <p class="w3-large">You will need to make a reference to masonry package. You can download both minified or unminified versions of masonry package from their <a class="link-text" href="https://masonry.desandro.com/" target="_blank">website</a></p>
+                    <p class="w3-large">After that, you add reference to masonry script.</p>
+                    <p class="w3-code w3-light-grey script-text"><strong><span>&lt;script src="/your-directories/masonry.pkgd.js"&gt;&lt;/script&gt;</span></strong></p>
+                    or
+                    <p class="w3-code w3-light-grey script-text"><strong><span>&lt;script src="/your-directories/masonry.pkgd.min.js"&gt;&lt;/script&gt;</span></strong></p>
+                    <p class="w3-large">You can also make a link to their script online.</p>
+                    <p class="w3-code w3-light-grey script-text"><strong><span>&lt;script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" &gt;&lt;/script&gt;</span></strong></p>
+                    <p class="w3-large">Make a div and add “grid” class to it. Then insert your child divs or child images into it. Add “grid-item” class to your child tags.</p>
+                    <div class="w3-code w3-content w3-hover-text-green w3-light-grey w3-container w3-padding-64">
+                        <code>
+                            &lt;div class="grid"&gt;
+                            <pre>
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;
+    &lt;img class="grid-item" src='../Your/Image/Path' alt="Image"&gt;</pre>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                    <h4>CSS:</h4>
+                    <p class="w3-large">Add styles to your “grid-item” class.</p>
+                    <div class="w3-code w3-content w3-hover-text-green w3-light-grey w3-container w3-padding-64">
+                        <code>
+                            <pre>
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+}
+                    </pre>
+                        </code>
+                    </div>
+                    <h4>JavaScript:</h4>
+                    <p class="w3-large">Use jquery selector to grab the element with class name “grid” which is the parent div of the masonry brick and use the masonry plugin to call masonry constructor and pass in options like item-selector and columnWidth into it. Remember to follow camel case as JavaScript follows camel Case practice.</p>
+                    <div class="w3-code w3-content w3-hover-text-green w3-light-grey w3-container w3-padding-64">
+                        <code>
+                            <pre>
+$('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+});
+
+                    </pre>
+                        </code>
+                    </div>
+                    <p class="w3-large">Execute the code and you will see how your grid images rendered in a much responsive smooth manner.</p>
+                    <p class="w3-large">Get this project on <a href="https://github.com/Areeeb/MasonryBrickCSS" target="_blank">Github</a></p>
+                </div>
+
+                <hr>
+                <div class="w3-container" id="contact">
+                    <div class="w3-container">
+                        <p class="w3-large">You can even add more CSS classes and play with masonry bricks to further make images grid look way more fantastic.</p>
+                        <p class="w3-large">Check out their <a class="link-text" href="https://github.com/desandro/masonry" target="_blank">github</a> documentation to learn more and most importantly, <strong>Surf the internet!</strong></p>
+                    </div>
+                </div>
+
+                <hr>
+                <div style="display: none" class="w3-container w3-padding-64" id="author-desktop">
+                    <!--Desktop-->
+                    <div class="author-section w3-container w3-padding-64">
+                        <img class="w3-circle" src="https://www.dropbox.com/s/4gmziynp2aaep11/me.jpg?raw=1" alt="Areeb" />
+                        <div class="outer">
+                            <div class="middle">
+                                <div class="inner">
+                                    <pre><span>  By: Areeb Younus</span></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer">
+                            <div class="middle">
+                                <div class="inner">
+                                    <pre><span>20/12/2018</span> </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none" class="w3-container w3-padding-64" id="author-mobile">
+                    <!--Mobile-->
+                    <div class="w3-container w3-padding-64">
+                        <img class="w3-circle" src="https://www.dropbox.com/s/4gmziynp2aaep11/me.jpg?raw=1" alt="Areeb" />
+                        <div class="outer">
+                            <div class="middle">
+                                <div class="inner">
+                                    <pre><span>By: Areeb Younus</span>
+<span>20/12/2018</span></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- End page content -->
+        </div>
+
+        <div class="w3-row reference-container" id="References">
+            <div class="w3-row">
+                <div class="w3-container" id="contact">
+                    <h1>References</h1>
+                    <p><strong><a href="https://masonry.desandro.com/" target="_blank"><span>https://masonry.desandro.com/</span></a></strong></p>
+                    <p><strong><a href="https://w3bits.com/css-masonry/" target="_blank"><span>https://w3bits.com/css-masonry/</span></a></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <a href="https://www.facebook.com/areebyounus1" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/AreebYounus1" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://plus.google.com/116751226306542296632?tab=jX" class="fa fa-google" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/areebyounus/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.instagram.com/areebblaster/" class="fa fa-instagram" target="_blank"></a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (window.matchMedia("(min-width: 767px)").matches) { // desktop
+                $("#author-desktop").show();
+            }
+            else { // mobile
+                $("#author-mobile").show();
+                $(".w3-hide-small").removeClass("w3-hide-small");
+            }
+        });
+    </script>
+    <!-- Footer -->
+
+
+</body>
+</html>
